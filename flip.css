@@ -1,0 +1,309 @@
+body{
+    margin:0 ;
+    padding:0;
+    background-color: black;
+    color:white;
+    font-family: sans-serif;
+    
+}
+ul{
+    display:flex;
+    margin:0;
+    padding: 0;
+    width:100%;
+    
+    align-items: center;  
+}
+
+ul li
+{
+    list-style: none;
+    
+}
+
+ul .first
+{
+    color: red;
+    font-size: 40px;
+    margin-left: 90px;
+    margin-top: 20px;
+    
+}
+
+ul .box
+{
+    width:90px;
+    height:35px;
+    background-color: transparent;
+    color:white;
+}
+ul .mid
+{
+    margin-left:auto;
+    margin-right:15px;
+}
+
+
+ul .last{
+    margin-right: 25px;
+    font-size:18px;
+    font-style: sanserif;
+}
+
+.last button
+{
+    background-color: red;
+    color:white;
+    border:none;
+    border-radius: 3px;
+    width:75px;
+    height:35px;
+}
+
+.intro h1{
+    font-size: 60px;
+    font-family:Arial, Helvetica, sans-serif;
+    margin:0;
+}
+.intro{
+    
+    margin:150px;
+    text-align: center;
+
+}
+
+#ready
+{
+    font-size: 18px;
+    font-family:sans-serif;
+}
+
+#start{
+    font-size: 20px;
+    font-family:sans-serif;
+}
+.background{
+    height:100vh;
+    background: linear-gradient(rgba(1, 1, 1, 0.5), rgba(9, 8, 8, 0.5)),
+    url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f562aaf4-5dbb-4603-a32b-6ef6c2230136/dh0w8qv-9d8ee6b2-b41a-4681-ab9b-8a227560dc75.jpg/v1/fill/w_1280,h_720,q_75,strp/the_netflix_login_background__canada__2024___by_logofeveryt_dh0w8qv-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzIwIiwicGF0aCI6IlwvZlwvZjU2MmFhZjQtNWRiYi00NjAzLWEzMmItNmVmNmMyMjMwMTM2XC9kaDB3OHF2LTlkOGVlNmIyLWI0MWEtNDY4MS1hYjliLThhMjI3NTYwZGM3NS5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.LOYKSxIDqfPwWHR0SSJ-ugGQ6bECF0yO6Cmc0F26CQs);
+    margin:0;
+    background-size: cover;
+    position: relative;
+    top: -5px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+   z-index:0;
+}
+
+section
+{
+    height:100vh;
+   /* display: flex;
+    justify-content: center;
+    align-items: center;*/
+    margin: 0px 100px 0px 100px;
+    z-index: 1;
+}
+
+
+
+
+.opt{
+    display: flex;
+}
+
+.opt select{
+    display:flex;
+    justify-content: space-between;
+    width:80px;
+    height:40px;
+}
+
+.carousel {
+    display: flex;
+    align-items: center;
+   overflow: hidden;
+    position: relative;
+    width: 100%;
+    margin: 20px 0;
+  }
+  
+  .carousel-item {
+    min-width: 200px; /* Adjust size as needed */
+    margin: 0 10px;
+    transition: transform 0.5s ease-in-out;
+    flex: 0 0 auto;
+  }
+  
+  .carousel-item img {
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  button.prev,
+  button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+    height:100px;
+    font-size: larger;
+    width:40px;
+    border-radius: 10%;
+  }
+  
+  button.prev {
+    left: 10px;
+  }
+  
+  button.next {
+    right: 10px;
+  }
+
+.cont {
+    display: flex;
+    flex-wrap: wrap; /* Allow the cards to wrap if the screen width is smaller */
+    justify-content: space-around; /* Space out the cards evenly */
+    margin: 40px 0;
+    gap: 20px; /* Add some space between cards */
+}
+
+.box{
+    color:black;
+}
+
+.card {
+    
+    border-radius: 20px;
+    background-color: rgb(39, 39, 110);
+    padding: 10px;
+    margin: 3px;
+    width: 23%;
+    height:270px;
+    box-sizing: border-box; /* Ensure padding doesn’t exceed width */
+    color: white;
+    text-align: center; /* Center-align text for neatness */
+}
+
+.card img{
+    position: relative;
+    right:-80px;
+    bottom:-40px;
+}
+
+.card p{
+    color: rgb(177, 175, 175);
+    font-size: 17px;
+}
+
+.card h3{
+    font-size: 20px;
+}
+
+.faq
+{
+  font-size:50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+}
+
+.plus
+{
+    background-color:rgb(59, 59, 59);  
+   border:none;
+   color: white;
+   font-size: 37px;
+  /* position:relative;
+   right:-700px;*/
+
+   position: static;
+  
+}
+
+ button:hover{
+    cursor: pointer;
+}
+
+.inp{
+    margin-top:200px;
+}
+
+.inp button{
+    background-color: red;
+    color:white;
+    border:none;
+    border-radius: 2px;
+    width:180px;
+    height:53px;
+    font-size: 18px;
+}
+.inp p{
+    font-size: 17px;
+}
+
+.inp{
+    margin:10px;
+    width:100%;
+}
+
+.inp input::placeholder {
+    color: white;
+    opacity: 0.8; /* Optional: Adjust opacity for better visibility */
+}
+.links a
+{
+    text-decoration: underline;
+    color:rgb(175, 171, 171);
+    padding:10px;
+}
+
+.faq
+{
+    width:90%;
+    height:50px;
+    padding:10px;
+    font-size: 20px;
+    border:none;
+    background-color:rgb(59, 59, 59);  
+    margin:10px;
+}
+
+.faq:hover
+{
+    background-color: rgb(103, 101, 101);
+}
+footer{
+    color: gray;
+    margin:0px 200px 100px 200px;
+}
+.faq-item {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.faq-question {
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-answer {
+    display: none;
+    padding: 10px;
+    margin-top: 10px;  /* Adds space between the question and answer */
+    background-color: #353030;
+    border-radius: 5px;
+}
+.faq-answer.show {
+    display: block; /* Show answer when class is toggled */
+}

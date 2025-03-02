@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="flip.css">
+</head>
+<body>
+    <header></header>
+    <main>
+        <div class="background">
+    <ul>
+        <li class="first"><b>NETFLIX</b></li>
+        <li class="mid">
+        <select class="box" value="English">
+              <option selected>English</option>
+              <option>Telugu</option>
+              <option>Hindi</option>
+              <option>Tamil</option>
+        </select>
+         </li>
+         <li class="last"><button>Sign In</button></li>
+    </ul>
+
+
+
+           
+     <div class="intro">
+        <h1><b>Unlimited movies,TV<br>shows and more</b></h1>
+        <p id="start">Starts at ₹149. Cancel anytime.</p>
+        <br>
+        <p id="ready">Ready to watch? Enter your email to create or restart your membership.</p>
+        <div class="inp">
+            <input type="email" style="width:400px;height:50px;background-color: transparent;color:white"  placeholder="Email address" name="fmail">
+            <button>Get Started ></button>
+        </div>
+    </div>
+   
+       </div>
+
+   
+  
+
+    <section>
+        <h2>Trending Now</h2>
+        <div class="carousel">
+            <div class="carousel-item active">
+              <img src="squid game.webp" alt="Squid Game">
+            </div>
+            <div class="carousel-item">
+              <img src="venom.webp" alt="Venom">
+            </div>
+            <div class="carousel-item">
+              <img src="bhool.webp" alt="Bhool Bhulaiyaa 3">
+            </div>
+            <div class="carousel-item">
+              <img src="lucky.webp" alt="Lucky Baskhar">
+            </div>
+            <div class="carousel-item">
+              <img src="mismatched.webp" alt="Mismatched">
+            </div>
+            <div class="carousel-item">
+                <img src="kitty.webp" alt="kitty">
+              </div>
+              <div class="carousel-item">
+                <img src="black.webp" alt="black">
+              </div>
+              <div class="carousel-item">
+                <img src="amaran.webp" alt="amaran">
+              </div>
+            <button class="prev">&lt;</button>
+            <button class="next">&gt;</button>
+          </div>
+
+          <script>
+            const prevButton = document.querySelector('.prev');
+            const nextButton = document.querySelector('.next');
+            const carousel = document.querySelector('.carousel');
+            const items = document.querySelectorAll('.carousel-item');
+            let currentIndex = 0;
+    
+            function updateCarousel() {
+                // Remove the active class from all items
+                items.forEach((item, index) => {
+                    item.style.transform = `translateX(${(index - currentIndex) * 30}%)`;
+                });
+            }
+    
+            // Initialize carousel positions
+            updateCarousel();
+    
+            prevButton.addEventListener('click', () => {
+                currentIndex = (currentIndex === 0) ? items.length - 1 : currentIndex - 1;
+                updateCarousel();
+            });
+    
+            nextButton.addEventListener('click', () => {
+                currentIndex = (currentIndex === items.length - 1) ? 0 : currentIndex + 1;
+                updateCarousel();
+            });
+
+       
+            document.addEventListener("DOMContentLoaded", function () {
+    const faqs = document.querySelectorAll(".faq");
+
+    faqs.forEach((faq) => {
+        const button = faq.querySelector(".plus");
+        const answer = faq.querySelector(".faq-answer");
+
+        button.addEventListener("click", function () {
+            // Check if the answer is already open
+            const isOpen = answer.style.display === "block";
+
+            // Close all FAQ answers
+            document.querySelectorAll(".faq-answer").forEach((ans) => (ans.style.display = "none"));
+            document.querySelectorAll(".plus").forEach((btn) => (btn.textContent = "+"));
+
+            // Toggle only if it was previously closed
+            if (!isOpen) {
+                answer.style.display = "block";
+                button.textContent = "-";
+            }
+        });
+    });
+});
+
+
+        </script>
+
+
+        <h2 style="margin-top: 50px;">More reasons to join</h2>
+        <div class="cont">
+            <div class="card">
+                <h3>Enjoy on your TV</h3>
+                <p>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</p>
+                <img src="tv.png" alt="icon" width="60px" height="60px">
+            </div>
+            <div class="card">
+                <h3>Download your shows to watch offline</h3>
+                <p>Save your favourites easily and always have something to watch.</p>
+                <img src="down-arrow.png" alt="icon" width="60px" height="60px">
+            </div>
+            <div class="card">
+                <h3>Watch everywhere</h3>
+                <p>Stream unlimited movies and TV shows on your phone, tablet, laptop and TV</p>
+                <img src="explorer.png" alt="icon" width="60px" height="60px">
+            </div>
+            <div class="card">
+                <h3>Create profiles for kids</h3>
+                <p>Send kids on adventures with their favourite characters in a space made just for them — free with your membership.</p>
+                <img src="wink.png" alt="icon" width="60px" height="60px">
+            </div>
+        </div>
+    </section>
+    
+  <section>
+        
+        <div class="ques">
+            <h2>Frequently asked questions</h2>
+            <div class="faq">
+                <span>How much does Netflix cost?</span>
+                <button class="plus">+</button>
+                <div class="faq-answer">
+                    Netflix has different pricing plans starting from ₹149 per month.
+                </div>
+            </div>
+            
+            
+            <div class="faq">Where can I watch?
+                <button class="plus">+</button>
+                <div class="faq-answer">
+                    You can watch Netflix on smartphones, tablets, Smart TVs, laptops, and streaming devices.
+                </div>
+            </div>
+            
+            <div class="faq">How do I cancel?
+                <button class="plus">+</button>
+                <div class="faq-answer">
+                    You can cancel your membership anytime through the Netflix account settings.
+                </div>
+            </div>
+            
+            <div class="faq">What can I watch on Netflix?
+                <button class="plus">+</button>
+                <div class="faq-answer">
+                    Netflix offers a wide range of movies, TV shows, anime, and documentaries.
+                </div>
+            </div>
+            
+            <div class="faq">Is Netflix good for kids?
+                <button class="plus">+</button>
+                <div class="faq-answer">
+                    Yes, Netflix has a Kids section with age-appropriate content.
+                </div>
+            </div>
+            
+        </div>
+   
+  
+       
+    
+    <div class="inp">
+        <p>Ready to watch? Enter your email to create or restart your membership.</p>
+        <input type="email" placeholder="Email address" style="width:600px;height:50px;background:transparent;color: rgb(255, 255, 255);" name="fmail">
+        <button>Get Started ></button>
+    </div>
+</section>
+
+</main>
+
+ 
+<br>
+   <footer>
+        <table class="links" width="90%" cellspacing="10">
+            <tr>
+                <td><a href="">Questions? Call 000-800-919-1743</a></td>
+            </tr>
+            <tr>
+                <td><a href="https://help.netflix.com/en/node/412">FAQ</a></td>
+                <td> <a href="">Cookie Preference</a></td>
+                <td><a href="https://help.netflix.com/en/node/134094">Coorporation Information</a></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.netflix.com/login?nextpage=https%3A%2F%2Fwww.netflix.com%2Fyouraccount">Account</a></td>
+                <td> <a href="https://help.netflix.com/en/contactus">Contact Us</a></td>
+                <td> <a href="https://help.netflix.com/en/node/14361">Ways to watch</a></td>
+            </tr>
+            <tr>
+                <td> <a href="https://help.netflix.com/legal/privacy">Privacy</a></td>
+                <td>  <a href="https://help.netflix.com/legal/notices">Legal Notices</a></td>
+                <td> <a href="https://www.netflix.com/in/browse/genre/839338">Only on Netflix</a> </td>
+            </tr>
+            <tr>
+                <td> <a href="https://help.netflix.com/en">Help Center</a></td>
+                <td> <a href="https://fast.com/">Speed Test</a></td>
+                <td><a href="https://ir.netflix.net/ir-overview/profile/default.aspx">Investor relations</a></td>
+            </tr>
+        </table>
+        <select value="English">
+            <option>English</option>
+            <option>Telugu</option>
+            <option>Hindi</option>
+            <option>Tamil</option>
+      </select>
+      <br>
+      <br>
+      Netflix India
+    
+    </footer>
+    </body>
+</html>
